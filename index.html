@@ -84,8 +84,9 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Federico De Cillia</h1>
-      <p>I'm a <span class="typed" data-typed-items="Lead Data Scientist, AI researcher, Big Data Analyst, Machine Learning Specialist, Statistician, Python Developer, 
-        BI analyst, Novas Top Talent member, Freelancer, Project Manager, Diversity & Inclusion Leader"></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Lead Data Scientist, AI researcher, Big Data Analyst, Pioneer and Innovator,
+                 Machine Learning Specialist, Statistician, Python Developer, BI specialist, Pro Freelancer, AI Project Manager, 
+                 Novas 111 list Top Talent winner, Diversity & Inclusion Leader"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -107,9 +108,9 @@
           </p>
           <ul>
               <li><strong>Programming languages</strong>: Python, R, SQL, Spark</li>
-              <li><strong>Data Visualization tools</strong>: Microsoft Power BI, Spotfire, Qlik, Tableau</li>
+              <li><strong>Data Visualization tools</strong>: Microsoft Power BI, Google Looker Studio, Qlik, Tableau</li>
               <li><strong>Agile & Software development tools</strong>: Git, Azure DevOps, CI/CD, Scrum, Kanban</li>
-              <li><strong>Cloud solutions</strong>: Microsoft Azure, Databricks (certified). </li>
+              <li><strong>Cloud solutions</strong>: Microsoft Azure, Databricks (certified) </li>
             </ul>          
         </div>  
         
@@ -250,7 +251,7 @@
               <h5>02/2021 - Present</h5>
               <p><em>EssilorLuxottica, <i class="icofont-google-map"></i>Milan, Italy </em></p>
               <ul>
-                <li>Led the Global Retail team in leveraging AI and Data Science methodologies to innovate existing processes. 
+                <li>Leading the Global Retail team in leveraging AI and Data Science methodologies to innovate existing processes. 
                   Provided compelling use cases and successfully implemented end-to-end solutions, driving tangible results 
                   and enhancing operational efficiency.
                 </li>
@@ -587,24 +588,45 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p></p>
         </div>
+
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>Machine Learning (Regression + Time Series)</strong>: Forecast monthly sales kpis</h4>
+                <h4 class="mb-0"><strong>Forecast + Anomaly Detection of Global Retail Stores sales</strong></h4>
+                <div class="subheading mb-0">EssilorLuxottica, <i class="icofont-google-map"></i>Milan, Italy</div>
+                <p>Deployed a scalable end-to-end pipeline for daily sales forecasting across 15.000+ Retail Stores.
+                  Simultaneously, implemented anomaly detection of past sales to detect unexpected spikes and emerging trends.
+                  <ul>
+                    <li><strong>Tech</strong>: Python (Polars, Functime), Git, Microsoft Power BI, Databricks.</li>
+                    <li><strong>AI</strong>: Blazingly-fast functime model deployed in Databricks (tens of thousands of forecasts in seconds), 
+                      Anomaly Detection model combining 6 different alerts into a Main Alert to identify really critical anomalies.</li>
+                    <li><strong>Achievements</strong>: Successfully integrated the highly accurate Daily Forecast + Anomaly Detection model into Microsoft Power BI, deployed Databricks cloud model.</li>
+                    <li><strong>Team</strong>: Lead a team of 4.</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="resume-date text-md-right">
+                <span class="text-primary">2023</span>
+            </div>
+        </div>
+        
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+                <h4 class="mb-0"><strong>Store Segmentation Web-App</strong></h4>
                 <div class="subheading mb-0">EssilorLuxottica, <i class="icofont-google-map"></i>Milan, Italy
                 </div>
-                <p>Deployment of a scalable end-to-end pipeline that forecast next 5 months sales kpis, using Microsoft Azure Machine Learning,
-                  Pycaret (Regression & Time Series modules). Data Visualization through Microsoft Power BI.
+                <p>Ideated and developed a Python Web-App from scratch for the Global Retail Business team (100+ people).
+                  The app streamlines annual Store Segmentation activities, replacing a manual, Excel-based process with efficient Machine Learning Clustering.
                   <ul>
-                    <li><strong>Programming Languages & software</strong>: Python (Pycaret), Azure Python SDK, Git</li>
-                    <li><strong>Machine Learning</strong>: Pycaret AutoML & Azure ML compares 50+ different ML & Time Series models 
-                      (Regression, Trees, Statistical models, Ensemble, etc.) to select the best one.</li>
-                    <li><strong>Cloud Computing</strong>: Azure Machine Learning (with Python SDK) used to train & deploy model in Cloud</li>
-                    <li><strong>BI</strong>: Power BI Dashboard connected to Azure ML endpoint through an API, to
-                    be able to always apply the model to new data</li>
-                    <li><strong>People Management</strong>: Lead a team of 3 people</li>
+                    <li><strong>Tech</strong>: Python (Streamlit, Scikit-Learn), Git, Docker.</li>
+                    <li><strong>AI</strong>: Mutliple ML Clustering algorithms (KMeans, Spectral Clustering, 
+                      Agglomerative Clustering, DBSCAN) developed and made accessible to end users.</li>
+                    <li><strong>Web-App</strong>: Custom-designed using Streamlit, offering full flexibility and customization for 
+                      the Global Retail team.</li>
+                    <li><strong>Achievements</strong>: Transitioned from an outdated Excel process to an interactive web-app.
+                      Enhanced efficiency by incorporating Machine Learning Recommendation, resulting in time savings for Retail Merchandisers.</li>
+                    <li><strong>Team</strong>: Lead a team of 3.</li>
                   </ul>
                 </p>
             </div>
@@ -612,21 +634,19 @@
                 <span class="text-primary">2022</span>
             </div>
         </div>
-        
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>Machine Learning (Clustering) & Web-App</strong>: Store Segmentation Web-App</h4>
-                <div class="subheading mb-0">EssilorLuxottica, <i class="icofont-google-map"></i>Milan, Italy
+                <h4 class="mb-0"><strong>Anomaly Detection for 1000+ Panel Performance KPIs</strong></h4>
+                <div class="subheading mb-0">Nielsen, <i class="icofont-google-map"></i>Milan, Italy
                 </div>
-                <p>Deployment of a Python (Streamlit) Web-App used by Global Retail Business team (100+ people) annually to perform 
-                  Store Segmentation, evolving an old manual, excel-based procedure and adding Machine Learning Clustering to it.
+                <p>Deployed a scalable end-to-end pipeline that provides a sorted list of most relevant anomalies among 1000+ KPIs on a daily basis.
                   <ul>
-                    <li><strong>Programming Languages & software</strong>: Python (Streamlit, Scikit-Learn), Git</li>
-                    <li><strong>Machine Learning</strong>: Various ML CLustering algorithms made available to end users (KMeans, Spectral Clustering, 
-                      Agglomerative Clustering, DBSCAN)</li>
-                    <li><strong>Web-App Design</strong>: Web-App designed completely from scratch using Streamlit python package, to provide full
-                    flexibility and customization to Global Retail business team.</li>
-                    <li><strong>People Management</strong>: Lead a team of 2 people</li>
+                    <li><strong>Tech</strong>: Python, Git, Spotfire.</li>
+                    <li><strong>AI</strong>: Anomaly detection model using Facebook Prophet.</li>
+                    <li><strong>BI</strong>: Developed an interactive BI Dashboard in Spotfire.</li>
+                    <li><strong>Achievements</strong>: Significantly reduced operational team effort by pinpointing only critical anomalies. </li>
+                    <li><strong>Team</strong>: Lead a team of 3.</li>
                   </ul>
                 </p>
             </div>
@@ -634,21 +654,19 @@
                 <span class="text-primary">2021</span>
             </div>
         </div>
-
+        
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>Time Series & BI</strong>: Prediction of Panel Performance's KPIs</h4>
+                <h4 class="mb-0"><strong>Forecast of Covid Closures in 40+ International countries</strong></h4>
                 <div class="subheading mb-0">Nielsen, <i class="icofont-google-map"></i>Milan, Italy
                 </div>
-                <p>Deployment of a scalable end-to-end pipeline that make 30 days forecasts for 1000+ KPIs daily and 20+ countries.
+                <p>Developed & Deployed a scalable end-to-end pipeline that forecast covid closures at country level, recommending when to stop operations in a particular country.
                   <ul>
-                    <li><strong>Programming Languages & software</strong>: Python, Git, Google BigQuery, Google Data Studio, Spotfire, Docker</li>
-                    <li><strong>Anomaly detection</strong> on past observations, to detect unexpected behavior in the near past</li>
-                    <li><strong>Future Predictions</strong> (along with their interval of confidence) for the next for 1000+ KPIs</li>
-                    <li><strong>BI Dashboard</strong> where is possible to visualize KPIs & forecasts for 20+ different countries</li>
-                    <li><strong>Methodology</strong>: Facebook Prophet forecasting procedure (Additive/Multiplicative model where non-linear trends
-                      are fit with daily/weekly/yearly seasonality + holidays)</li>
-                    <li><strong>People Management</strong>: Lead a team of 3 people</li>
+                    <li><strong>Tech</strong>: Python, Git, Spotfire, Google BigQuery, Google Data Studio, Docker.</li>
+                    <li><strong>AI</strong>: Forecast Covid closures in each country, following spikes noticed in N° of diseases and deaths.</li>
+                    <li><strong>BI</strong>: Interactive BI Dashboard developed in Google Looker Studio.</li>
+                    <li><strong>Achievements</strong>: Daily forecast of covid closures supporting operations to take immediate actions in uncertain times, saving cost and avoiding spread of diseases.</li>
+                    <li><strong>Team</strong>: Lead a team of 3.</li>
                   </ul>
                 </p>
             </div>
@@ -656,20 +674,18 @@
                 <span class="text-primary">2020</span>
             </div>
         </div>
-
+        
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>Machine Learning (Regression)</strong>: Prediction of Viewing/Listening Behaviors</h4>
+                <h4 class="mb-0"><strong>Forecast of Viewing/Listening Behaviors of TV/Radio viewers/listeners.</strong></h4>
                 <div class="subheading mb-0">Nielsen, <i class="icofont-google-map"></i>Milan, Italy
                 </div>
-                <p>Deployment of a scalable AutoML pipeline that predicts user behavior (n° of minutes of video content watched) 
-                  in 4 countries (scalable to 20+ countries)
+                <p>Developed & Deployed a scalable AutoML pipeline that predicts user behavior (N° of minutes of video content watched) across four countries (with scalability to 20+ countries).
                   <ul>
-                    <li><strong>Programming Languages</strong>: Python (Scikit-Learn), Git, Databricks (Pyspark & Koalas)</li>
-                    <li><strong>Various algorithms compared</strong>: 
-                      Regression (Linear, Lasso, Ridge, Huber, Elastic Net), Decision Trees, 
-                      Ensemble Models (Random Forest, Extra Randomized trees, AdaBoost, Gradient Boosting, Voting)
-                    <li><strong>People Management</strong>: Lead a team of 9 people</li>
+                    <li><strong>Tech</strong>: Python, Git, Spark.</li>
+                    <li><strong>AI</strong>: Regression (Linear, Lasso, Ridge, Huber, Elastic Net), Ensemble Models (Random Forest, Extra Randomized trees, AdaBoost, Gradient Boosting).</li>
+                    <li><strong>Achievements</strong>: AutoML pipeline built from scratch, Individual forecast of viewing behaviors, enabled personalized content recommendations.</li>
+                    <li><strong>Team</strong>: Lead a team of 6.</li>
                     </li>
                   </ul>
                 </p>
@@ -681,19 +697,15 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>Machine Learning (Classification)</strong>: Churn Prediction model for Panelists</h4>
+                <h4 class="mb-0"><strong>Churn Prediction of Panelists in international Media Panels</strong></h4>
                 <div class="subheading mb-0">Nielsen, <i class="icofont-google-map"></i>Milan, Italy
                 </div>
-                <p>Deployment of a scalable Churn Prediction model that assigns the likelihood of churn in the following months to each panelist.
+                <p>Deployed a scalable Churn Prediction model that assesses the likelihood of churn for each panelist in the upcoming months.
                   <ul>
-                    <li><strong>Programming Languages</strong>: Python (Scikit-Learn), Git, Databricks (Pyspark & Koalas)</li>
-                    <li><strong>Various algorithms tested & compared</strong>:
-                        Ensemble Models (XGBoost, Random Forest, Extra Randomized trees, AdaBoost, Gradient Boosting, Voting), 
-                        Support Vector Machines (C-Support Vector Classification, Nu-Support Vector Classification), 
-                        Deep Learning (Multi-Layer-Perceptron), 
-                        Other (Logistic Regression, Linear & Quadratic Discriminant Analysis, K-Nearest-Neighbors, Naive Bayes, 
-                        Decision Tree classifier)
-                    <li><strong>People Management</strong>: Lead a team of 9 people</li>
+                    <li><strong>Tech</strong>: Python, Git, Spark.</li>
+                    <li><strong>AI</strong>: Logistic, Ensemble (XGBoost, Random Forest, Extra Randomized trees, AdaBoost, Gradient Boosting, Voting), Deep Learning (Multi-Layer-Perceptron).</li>
+                    <li><strong>Achievements</strong>: Scalable deployment, enabled targeted retention efforts, cross-functional teams collaboration.</li>
+                    <li><strong>Team</strong>: Lead a team of 4.</li>
                     </li>
                   </ul>
                 </p>
@@ -705,17 +717,16 @@
       
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-                <h4 class="mb-0"><strong>NLP & Machine Learning</strong>: Churn Prediction Model using NLP outcomes</h4>
+                <h4 class="mb-0"><strong>NLP Churn Prediction Model</strong></h4>
                 <div class="subheading mb-0">Sky, <i class="icofont-google-map"></i>Milan, Italy 
                 </div>
-                <p>Improve the existing Churn Prediction model, by exploiting (and fine-tuning) the outcome of a Speech analytics
-                  tool that transcribes Customers' calls to Sky Call-Centers. Test & fine-tune the new Churn Prediction model to maximize 
-                  profitability of Prevention, Retention, Upselling, Downgrade Marketing strategies.
+                <p>Enhanced existing Churn Prediction model by integrating customer care call transcripts. Fine tuned the model leveraging 
+                  NLP for better accuracy and profitability of Prevention, Retention, Upselling & Downgrade Marketing strategies.
                   <ul>
-                    <li><strong>Programming Languages & software</strong>: Python, KNime</li>
-                    <li><strong>Machine Learning</strong> used to create a new Churn Prediction model adding topics of calls to standard Customer Base variables</li>
-                    <li><strong>NLP & Text Mining</strong> used to fine-tune the Speech Analytics tool and create Word-Clouds of each Cluster of customers</li>
-                    <li><strong>People Management</strong>: Lead a team of 2 people</li>
+                    <li><strong>Tech</strong>: Python, KNime.</li>
+                    <li><strong>AI</strong>: Classification algorithms (Logistic, Random Forest, XGBoost, SVM), NLP, Text-Mining.</li>
+                    <li><strong>Achievements</strong>: Integrated call transcripts data, Improved Retention Rates, Promo Optimization, Cost Savings.</li>
+                    <li><strong>Team</strong>: Lead a team of 2.</li>
                   </ul>
               </p>
             </div>
