@@ -72,47 +72,37 @@ git add -A && git commit -m "chore: scaffold Astro + tailwind + mdx + sitemap"
 
 ### Task 2: Design tokens, fonts, base Layout, Nav, Footer
 
+**Stack note:** Task 1 scaffolded Astro 6 + Tailwind v4 (via `@tailwindcss/vite`). There is NO `tailwind.config.js`. Tokens are defined CSS-natively with `@theme` in `src/styles/global.css`. Tailwind v4 auto-generates utilities from theme vars: `--color-clay` → `bg-clay`/`text-clay`/`border-clay`, `--font-serif` → `font-serif`. So all later components keep using `bg-clay`, `text-muted`, `border-line`, `font-serif` unchanged.
+
 **Files:**
-- Modify: `tailwind.config.mjs`
-- Create: `src/styles/global.css`, `src/layouts/Layout.astro`, `src/components/Nav.astro`, `src/components/Footer.astro`
+- Modify: `src/styles/global.css` (already created by `astro add`)
+- Create: `src/layouts/Layout.astro`, `src/components/Nav.astro`, `src/components/Footer.astro`
 
-- [ ] **Step 1: Add palette + fonts to `tailwind.config.mjs`**
+- [ ] **Step 1: Define palette + fonts via `@theme` in `src/styles/global.css`**
 
-```js
-export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
-  theme: {
-    extend: {
-      colors: {
-        paper: '#FBF8F2',
-        ink: '#1F1D1A',
-        clay: '#B5482B',
-        muted: '#6B655C',
-        line: '#E7E1D6',
-      },
-      fontFamily: {
-        serif: ['Fraunces', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
-      },
-    },
-  },
-  plugins: [],
-};
-```
-
-- [ ] **Step 2: Create `src/styles/global.css`**
+Replace the file contents with:
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FBF8F2;
+  --color-ink: #1F1D1A;
+  --color-clay: #B5482B;
+  --color-muted: #6B655C;
+  --color-line: #E7E1D6;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
 
 :root { color-scheme: light; }
 html { scroll-behavior: smooth; }
-body { background: #FBF8F2; color: #1F1D1A; }
+body { background: var(--color-paper); color: var(--color-ink); }
 a { color: inherit; }
 ```
+
+- [ ] **Step 2: Ensure `global.css` is imported once (in `Layout.astro`, Step 3 below).** No separate `@tailwind` directives needed in v4 — the single `@import "tailwindcss";` replaces them.
 
 - [ ] **Step 3: Create `src/layouts/Layout.astro`**
 
