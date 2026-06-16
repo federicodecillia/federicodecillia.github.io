@@ -13,6 +13,6 @@ npm run preview  # preview the build
 ```
 
 ## Deploy
-Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds with Astro and deploys to GitHub Pages. Set repo Settings → Pages → Source = "GitHub Actions" once.
+Pushing to `master` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds with Astro and deploys to GitHub Pages. Set repo Settings → Pages → Source = "GitHub Actions" once.
 
 Built with Claude Code.
