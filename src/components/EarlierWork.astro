@@ -1,0 +1,21 @@
+---
+const items = [
+  ['Store segmentation web-app', 'Clustering retail stores into actionable segments, served through an internal web app.'],
+  ['Retail sales forecasting & anomaly detection', 'Forecasting global store sales and flagging anomalies at scale.'],
+  ['Covid closure forecasting', 'Modeling store and market closures across 40+ countries during the pandemic.'],
+  ['Audience behavior forecasting', 'Predicting TV and radio viewing and listening behavior.'],
+  ['Panel churn prediction', 'Predicting churn of panelists across international media panels.'],
+  ['NLP churn prediction', 'A text-mining model predicting customer churn.'],
+];
+---
+<section class="py-12 scroll-mt-20 border-t border-line">
+  <h2 class="font-serif text-3xl mb-6">Earlier work</h2>
+  <div class="grid sm:grid-cols-2 gap-x-8 gap-y-5">
+    {items.map(([title, desc]) => (
+      <div>
+        <h3 class="font-medium">{title}</h3>
+        <p class="text-muted text-sm mt-1 leading-relaxed">{desc}</p>
+      </div>
+    ))}
+  </div>
+</section>

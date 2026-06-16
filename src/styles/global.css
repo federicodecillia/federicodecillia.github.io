@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FBF8F2;
+  --color-ink: #1F1D1A;
+  --color-clay: #B5482B;
+  --color-muted: #6B655C;
+  --color-line: #E7E1D6;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background: var(--color-paper); color: var(--color-ink); }

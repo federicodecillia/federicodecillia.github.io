@@ -1,0 +1,19 @@
+---
+title: WeGrocery
+summary: An open-source, white-label platform for food co-ops, a deployment per group from one codebase.
+stack: ["next.js", "react", "postgres", "drizzle", "vercel"]
+repo: https://github.com/federicodecillia/wegrocery
+demo: https://wegrocery-demo.vercel.app
+order: 3
+---
+
+## Problem
+Buying groups ran their weekly orders on spreadsheets and chat: no real platform, no balance tracking, manual money math every cycle.
+
+## Approach
+I designed and built it end-to-end. Members order within time-boxed cycles, the system tracks each member's prepaid balance like a ledger, and admins close the cycle, charge everyone, split shipping and email the supplier. It is white-label by a single environment variable (name, logo, colors, language), so one main branch serves every group and a fix lands everywhere with one merge, no forks. Next.js 15 App Router, React Server Components, Server Actions, Drizzle on serverless Postgres, on Vercel, and the whole analytics dashboard is pure CSS and inline SVG, no charting library.
+
+## Impact
+In production since 2025 for a Milan residents' association running a real buying group, every week, with real money and members. A one-click public demo lets anyone explore both the member and admin views.
+
+Built with Claude Code.
