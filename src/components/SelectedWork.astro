@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import WorkCard from './WorkCard.astro';
+const items = (await getCollection('work', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
+---
+<section id="work" class="py-12 scroll-mt-20">
+  <h2 class="font-serif text-3xl mb-6">Selected work</h2>
+  <div class="grid sm:grid-cols-2 gap-4">
+    {items.map((item) => <WorkCard title={item.data.title} summary={item.data.summary} stack={item.data.stack} id={item.id} />)}
+  </div>
+</section>
