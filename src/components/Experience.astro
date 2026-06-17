@@ -1,0 +1,23 @@
+---
+const roles = [
+  ['Lead Data Scientist — Retail Assortment Intelligence', 'EssilorLuxottica', 'Feb 2021 — present', 'Lead the DTC retail assortment data science team: AI, forecasting, optimization and agents across 18,000+ stores, from idea to production.'],
+  ['AI Consultant & Trainer (independent)', 'Freelance', '2019 — present', 'Build and ship LLM chatbots, RAG agents and automations for businesses, and train teams to adopt AI. Fiverr Vetted Pro.'],
+  ['Senior Data Scientist', 'Nielsen', 'Sep 2017 — Feb 2021', 'Led predictive models (time series, classification, clustering) on audience and panel data across 40+ countries, and built scalable data pipelines.'],
+  ['Data Scientist, Consultant', 'Bip — Business Integration Partners', 'Apr 2016 — Sep 2017', 'Big Data & Advanced Analytics CoE: delivered an NLP churn-prediction system and text-mining for customer profiling.'],
+  ['Data Science Consultant', 'SAS / Value Lab', 'Jun 2015 — Apr 2016', 'SAS Masterclass in Big Data & Analytics; built ETL pipelines and BI dashboards.'],
+];
+---
+<section id="experience" class="py-12 scroll-mt-20 border-t border-line">
+  <h2 class="font-serif text-3xl mb-6">Experience</h2>
+  <div class="space-y-6">
+    {roles.map(([title, org, dates, desc]) => (
+      <div>
+        <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+          <h3 class="font-medium">{title} <span class="text-muted font-normal">· {org}</span></h3>
+          <span class="text-muted text-sm font-mono shrink-0">{dates}</span>
+        </div>
+        <p class="text-muted text-sm mt-1 leading-relaxed max-w-2xl">{desc}</p>
+      </div>
+    ))}
+  </div>
+</section>

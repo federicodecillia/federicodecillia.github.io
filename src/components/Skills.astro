@@ -1,0 +1,22 @@
+---
+const groups = [
+  ['AI & GenAI', ['LLMs', 'RAG', 'AI agents', 'Claude Code', 'MCP', 'prompt engineering', 'Databricks Genie']],
+  ['Data science & ML', ['Python', 'forecasting', 'anomaly detection', 'clustering', 'NLP', 'MLOps']],
+  ['Data & cloud', ['SQL', 'Spark', 'Databricks', 'Azure', 'AWS', 'GCP', 'Postgres']],
+  ['BI & visualization', ['Power BI', 'Looker Studio', 'Tableau', 'Qlik']],
+  ['Languages', ['Italian (native)', 'English (C1)', 'Spanish (B2)']],
+];
+---
+<section id="skills" class="py-12 scroll-mt-20 border-t border-line">
+  <h2 class="font-serif text-3xl mb-6">Skills</h2>
+  <div class="space-y-5">
+    {groups.map(([label, items]) => (
+      <div>
+        <h3 class="text-sm font-medium text-muted mb-2">{label}</h3>
+        <div class="flex flex-wrap gap-2">
+          {items.map((s) => <span class="font-mono text-xs border border-line rounded px-2 py-0.5">{s}</span>)}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
