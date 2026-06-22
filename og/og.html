@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:'Inter';font-weight:400;src:url('../cv/inter-400.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:500;src:url('../cv/inter-500.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:600;src:url('../cv/inter-600.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-weight:600;font-style:normal;src:url('../cv/fraunces-600.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-weight:600;font-style:italic;src:url('../cv/fraunces-600-italic.woff2') format('woff2');}
+
+:root{--paper:#FBF8F2;--ink:#1F1D1A;--clay:#B5482B;--muted:#6B655C;--line:#E7E1D6;--soft:#F4ECE2;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1200px;height:600px;}
+body{font-family:'Inter',sans-serif;background:var(--paper);
+  display:flex;align-items:center;justify-content:center;color:var(--ink);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+.win{width:1140px;height:540px;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 20px 50px rgba(31,29,26,.10);overflow:hidden;display:flex;flex-direction:column;}
+
+.bar{height:54px;flex:none;border-bottom:1px solid var(--line);background:#fff;
+  display:flex;align-items:center;gap:9px;padding:0 22px;}
+.dot{width:13px;height:13px;border-radius:50%;}
+.d1{background:#E0796A;}.d2{background:#E9C46A;}.d3{background:#9CC4A8;}
+.url{margin-left:14px;flex:1;height:31px;background:var(--soft);border-radius:8px;
+  display:flex;align-items:center;padding:0 14px;gap:9px;font-size:15px;color:var(--muted);letter-spacing:.2px;}
+.lock{width:11px;height:9px;border:1.6px solid var(--muted);border-radius:2px;position:relative;margin-top:3px;}
+.lock::before{content:"";position:absolute;left:50%;top:-6px;transform:translateX(-50%);
+  width:8px;height:8px;border:1.6px solid var(--muted);border-bottom:none;border-radius:5px 5px 0 0;}
+.url b{color:var(--ink);font-weight:600;}
+
+.body{flex:1;padding:48px 56px 50px;display:flex;flex-direction:column;justify-content:space-between;}
+.kicker{font-size:15px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);}
+.mid{display:flex;flex-direction:column;}
+.name{font-family:'Fraunces',serif;font-weight:600;font-size:64px;line-height:1.02;color:var(--ink);}
+.role{font-size:21px;color:var(--muted);margin-top:13px;font-weight:500;}
+.tag{font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:28px;color:var(--clay);margin-top:20px;line-height:1.2;}
+.chips{display:flex;gap:10px;flex-wrap:wrap;}
+.chip{font-size:15px;color:var(--muted);border:1px solid var(--line);border-radius:7px;padding:6px 13px;letter-spacing:.02em;}
+</style>
+</head>
+<body>
+  <div class="win">
+    <div class="bar">
+      <div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
+      <div class="url"><span class="lock"></span><span><b>federicodecillia.github.io</b></span></div>
+    </div>
+    <div class="body">
+      <div class="kicker">Portfolio · Selected work &amp; case studies</div>
+      <div class="mid">
+        <div class="name">Federico De Cillia</div>
+        <div class="role">Lead Data Scientist · AI Consultant &amp; Trainer</div>
+        <div class="tag">I build reliable AI agents that augment people.</div>
+      </div>
+      <div class="chips">
+        <div class="chip">AI agents</div>
+        <div class="chip">LLM apps</div>
+        <div class="chip">RAG</div>
+        <div class="chip">MCP</div>
+        <div class="chip">Claude</div>
+        <div class="chip">Python</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
