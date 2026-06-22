@@ -42,7 +42,7 @@ certificazione), aggiornalo **ovunque**:
 
 I numeri canonici attuali (metriche): **12+ yrs** AI & data science · **100+** AI
 projects shipped · **50+** businesses served. Headline/tagline:
-"I build reliable AI agents that augment people, not replace them."
+"I build reliable AI agents that augment people."
 
 ### Skills: CV ↔ sito devono restare coerenti (verifica SEMPRE)
 
