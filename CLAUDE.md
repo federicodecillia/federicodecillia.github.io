@@ -44,6 +44,19 @@ I numeri canonici attuali (metriche): **12+ yrs** AI & data science · **100+** 
 projects shipped · **50+** businesses served. Headline/tagline:
 "I build reliable AI agents that augment people, not replace them."
 
+### Skills: CV ↔ sito devono restare coerenti (verifica SEMPRE)
+
+Le skill vivono in due posti e divergono facilmente:
+- Sito: `src/components/Skills.astro` (array `groups`, stile a chip).
+- CV: `cv/cv.html`, sezione `.band` -> colonna `Skills` (`.skillrow`).
+
+Ogni volta che tocchi le skill di uno dei due, **riallinea l'altro**: i gruppi
+condivisi (AI engineering, Data science & ML, Data & cloud, Apps & web, Languages)
+devono avere le stesse voci e lo stesso wording, senza contraddizioni. Il sito puo'
+tenere gruppi extra che nel CV non stanno per motivi di spazio (oggi:
+**BI & visualization**, **Delivery**); va bene, purche' non contraddicano il CV.
+Dopo l'allineamento rigenera il CV (`cd cv && ./build.sh`) se l'hai modificato.
+
 ## Deploy
 
 Push a `master` -> GitHub Action builda e pubblica su GitHub Pages (~1-2 min). Un
