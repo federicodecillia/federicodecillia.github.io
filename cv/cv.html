@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:'Inter';font-weight:400;font-style:normal;src:url('inter-400.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:500;font-style:normal;src:url('inter-500.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:600;font-style:normal;src:url('inter-600.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-weight:400;font-style:normal;src:url('fraunces-400.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-weight:600;font-style:normal;src:url('fraunces-600.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-weight:600;font-style:italic;src:url('fraunces-600-italic.woff2') format('woff2');}
+
+:root{
+  --clay:#B5482B; --ink:#211F1B; --muted:#6B655C; --faint:#928C82;
+  --line:#E4DED3; --soft:#FAF1EC;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+@page{size:A4;margin:0;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
+.page{width:210mm;min-height:297mm;padding:15mm 16mm 14mm;background:#fff;}
+
+.header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
+.photo{width:64px;height:64px;border-radius:8px;object-fit:cover;object-position:50% 18%;flex-shrink:0;border:1px solid var(--line);}
+.hgroup{flex:1;min-width:0;}
+.name{font-family:'Fraunces',serif;font-weight:600;font-size:30px;line-height:1.02;color:var(--clay);letter-spacing:.1px;}
+.role{font-weight:500;font-size:11px;color:var(--ink);margin-top:5px;letter-spacing:.2px;}
+.tagline{font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:13px;color:var(--clay);margin-top:7px;}
+.contact{text-align:right;font-size:9.6px;line-height:1.72;color:var(--muted);white-space:nowrap;padding-top:3px;}
+.contact a{color:var(--clay);text-decoration:none;}
+.contact .loc{color:var(--ink);font-weight:500;}
+
+.rule{height:2px;background:var(--clay);margin:11px 0 0;}
+
+.summary{font-size:10.3px;line-height:1.56;color:var(--ink);margin-top:12px;}
+
+.portfolio{display:flex;align-items:center;gap:8px;background:var(--soft);border-left:3px solid var(--clay);
+  border-radius:0 4px 4px 0;padding:7px 11px;margin-top:11px;font-size:10px;}
+.portfolio b{color:var(--ink);font-weight:600;}
+.portfolio a{color:var(--clay);text-decoration:none;font-weight:600;margin-left:auto;}
+
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;}
+.metric{background:var(--soft);border-radius:6px;padding:9px 13px;}
+.metric .n{font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--clay);line-height:1;}
+.metric .l{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+
+.sec{font-weight:600;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--clay);
+  border-bottom:1px solid var(--line);padding-bottom:4px;margin:17px 0 9px;}
+
+.job{margin-bottom:9px;}
+.job-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;}
+.job-title{font-size:11px;}
+.job-title b{font-weight:600;color:var(--ink);}
+.job-title span{color:var(--muted);}
+.job-dates{font-weight:500;font-size:9.3px;color:var(--faint);white-space:nowrap;letter-spacing:.02em;}
+.job-scope{font-style:italic;font-size:9.8px;color:var(--muted);margin:1px 0 4px;}
+.bullets{list-style:none;}
+.bullets li{position:relative;padding-left:13px;font-size:10.1px;line-height:1.48;color:var(--ink);margin-bottom:2.5px;}
+.bullets li::before{content:"";position:absolute;left:1px;top:.5em;width:3.5px;height:3.5px;background:var(--clay);border-radius:50%;}
+.job.compact{margin-bottom:3px;}
+
+.band{display:grid;grid-template-columns:1.06fr 0.94fr;gap:24px;margin-top:6px;}
+.band .sec{margin-top:0;}
+.skillrow{font-size:9.9px;line-height:1.5;margin-bottom:5px;}
+.skillrow b{font-weight:600;color:var(--ink);}
+.skillrow span{color:var(--muted);}
+.certline{font-size:9.9px;line-height:1.5;color:var(--ink);margin-bottom:3.5px;}
+.certline span{color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <img class="photo" src="headshot.jpg" alt="Federico De Cillia">
+    <div class="hgroup">
+      <div class="name">Federico De Cillia</div>
+      <div class="role">Lead Data Scientist · AI Consultant &amp; Trainer</div>
+      <div class="tagline">I build reliable AI agents that augment people, not replace them.</div>
+    </div>
+    <div class="contact">
+      <div class="loc">Milan, Italy</div>
+      <div>federico.decillia@gmail.com</div>
+      <div><a href="https://federicodecillia.github.io">federicodecillia.github.io</a></div>
+      <div><a href="https://www.linkedin.com/in/federicodecillia">linkedin.com/in/federicodecillia</a></div>
+      <div><a href="https://github.com/federicodecillia">github.com/federicodecillia</a></div>
+    </div>
+  </div>
+  <div class="rule"></div>
+
+  <div class="summary">Over 12 years bridging advanced AI and real business outcomes. I lead data science at a global enterprise and run an independent AI practice, shipping LLM agents, chatbots and automations into production. Hands-on builder, active at the frontier, focused on AI that earns trust and delivers measurable ROI.</div>
+
+  <div class="portfolio"><b>Full portfolio &amp; live case studies</b><a href="https://federicodecillia.github.io">federicodecillia.github.io</a></div>
+
+  <div class="metrics">
+    <div class="metric"><div class="n">12+ yrs</div><div class="l">AI &amp; data science</div></div>
+    <div class="metric"><div class="n">100+</div><div class="l">AI projects shipped</div></div>
+    <div class="metric"><div class="n">50+</div><div class="l">businesses served</div></div>
+  </div>
+
+  <div class="sec">Experience</div>
+
+  <div class="job">
+    <div class="job-head"><div class="job-title"><b>Lead Data Scientist</b> <span>· EssilorLuxottica</span></div><div class="job-dates">2021 – present</div></div>
+    <div class="job-scope">Global Retail &amp; DTC Assortment Intelligence</div>
+    <ul class="bullets">
+      <li>Lead a data science team owning AI initiatives end-to-end across 18,000+ stores and 40+ markets.</li>
+      <li>Built forecasting, anomaly-detection and clustering engines driving automated decisions at scale.</li>
+      <li>Shipped LLM and agentic systems giving business teams natural-language access to enterprise data.</li>
+      <li>Impact: license savings, multi-FTE efficiency gains and incremental revenue.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><div class="job-title"><b>AI Consultant &amp; Trainer</b> <span>· Freelance</span></div><div class="job-dates">2019 – present</div></div>
+    <ul class="bullets">
+      <li>Delivered AI agents, LLM chatbots and automations to 50+ businesses across industries; Fiverr Vetted Pro (5/5 across 100+ projects).</li>
+      <li>Run tailored AI trainings (generative AI, LLMs, agents, automation) for audiences from beginners to technical teams.</li>
+      <li>Advise clients on high-impact use cases and end-to-end delivery, from scoping to production rollout.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><div class="job-title"><b>Senior Data Scientist</b> <span>· Nielsen</span></div><div class="job-dates">2017 – 2021</div></div>
+    <ul class="bullets">
+      <li>Led predictive models (time series, classification, clustering) on audience and panel data across 40+ countries, and built scalable data pipelines.</li>
+    </ul>
+  </div>
+
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Scientist</b> <span>· Bip — Business Integration Partners</span></div><div class="job-dates">2016 – 2017</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Science Consultant</b> <span>· SAS / Value Lab</span></div><div class="job-dates">2015 – 2016</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Mining Junior Officer</b> <span>· Università Bocconi</span></div><div class="job-dates">2015</div></div></div>
+
+  <div class="sec">Education</div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>MSc &amp; BSc in Statistical Sciences</b> <span>· University of Padua</span></div><div class="job-dates">2008 – 2014</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>LLP Erasmus, Economics</b> <span>· Universitat Pompeu Fabra, Barcelona</span></div><div class="job-dates">2012</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>IT Technical Diploma (Perito Industriale, Informatica)</b> <span>· ITI F. Severi, Padua</span></div><div class="job-dates">2004 – 2008</div></div></div>
+
+  <div class="band">
+    <div>
+      <div class="sec">Skills</div>
+      <div class="skillrow"><b>AI engineering</b><br><span>LLMs, agents, agentic workflows, RAG, MCP, tool use, evals, prompt engineering, fine-tuning, Claude API</span></div>
+      <div class="skillrow"><b>ML &amp; data science</b><br><span>Python, forecasting, anomaly detection, clustering, NLP, MLOps, embeddings &amp; vector DBs</span></div>
+      <div class="skillrow"><b>Data &amp; cloud</b><br><span>SQL, Spark, Databricks, Azure, AWS, GCP, Postgres, Docker, Git &amp; CI/CD</span></div>
+      <div class="skillrow"><b>Apps &amp; web</b><br><span>FastAPI, Streamlit, TypeScript, Next.js, React, Vercel</span></div>
+      <div class="skillrow"><b>Languages</b><br><span>Italian (native), English (C1), Spanish (B2)</span></div>
+    </div>
+    <div>
+      <div class="sec">Certifications, recognitions</div>
+      <div class="certline">Databricks ML Professional</div>
+      <div class="certline">Azure Data Scientist Associate (DP-100)</div>
+      <div class="certline">Nova 111 Top Talent Italy (2023)</div>
+      <div class="certline">Big Data <span>— MIT Professional</span></div>
+      <div class="certline">Deep Learning Specialization <span>— deeplearning.ai</span></div>
+      <div class="certline">ML for Data Science &amp; Analytics <span>— Columbia</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
