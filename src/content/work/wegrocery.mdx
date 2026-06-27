@@ -1,6 +1,6 @@
 ---
 title: WeGrocery
-summary: An open-source, white-label platform for food co-ops, a deployment per group from one codebase.
+summary: An open-source platform built for Porta Moneta APS, a nonprofit buying group, with one deployment per group from one codebase.
 stack: ["next.js", "react", "postgres", "drizzle", "vercel"]
 repo: https://github.com/federicodecillia/wegrocery
 demo: https://wegrocery-demo.vercel.app
@@ -8,12 +8,12 @@ order: 5
 ---
 
 ## Problem
-Buying groups ran their weekly orders on spreadsheets and chat: no real platform, no balance tracking, manual money math every cycle.
+Buying groups ran their weekly orders on spreadsheets and chat: no real platform, no balance tracking, manual money math every cycle. Porta Moneta APS, the Milan nonprofit association I co-founded as a volunteer, needed a reliable way to run real weekly orders for members.
 
 ## Approach
-I designed and built it end-to-end. Members order within time-boxed cycles, the system tracks each member's prepaid balance like a ledger, and admins close the cycle, charge everyone, split shipping and email the supplier. It is white-label by a single environment variable (name, logo, colors, language), so one main branch serves every group and a fix lands everywhere with one merge, no forks. Next.js 15 App Router, React Server Components, Server Actions, Drizzle on serverless Postgres, on Vercel, and the whole analytics dashboard is pure CSS and inline SVG, no charting library.
+As Co-founder & Technology Lead of Porta Moneta APS, I designed and built it end-to-end. Members order within time-boxed cycles, the system tracks each member's prepaid balance like a ledger, and admins close the cycle, charge everyone, split shipping and email the supplier. It is white-label by a single environment variable (name, logo, colors, language), so one main branch serves every group and a fix lands everywhere with one merge, no forks. Next.js 15 App Router, React Server Components, Server Actions, Drizzle on serverless Postgres, on Vercel, and the whole analytics dashboard is pure CSS and inline SVG, no charting library.
 
 ## Impact
-In production since 2025 for a Milan residents' association running a real buying group, every week, with real money and members. A one-click public demo lets anyone explore both the member and admin views.
+In production since 2025 for Porta Moneta APS, running a real nonprofit buying group every week, with real money and members. It sits alongside the association's broader digital layer: public website, AI chatbot for member support, digital membership workflows and lightweight internal operations. A one-click public demo lets anyone explore both the member and admin views.
 
 Built with Claude Code.
