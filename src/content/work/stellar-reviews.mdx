@@ -1,0 +1,18 @@
+---
+title: Stellar Reviews
+summary: A multi-tenant AI agent that drafts on-brand, multi-language review responses for hospitality businesses, with a test suite that verifies itself against the live product.
+stack: ["next.js", "typescript", "python", "postgres", "vercel", "playwright"]
+demo: https://stellar-reviews-psi.vercel.app/demo
+order: 2
+---
+
+## Problem
+Hospitality businesses accumulate guest reviews across Google and TripAdvisor faster than owners can respond to them well. Replies end up generic, inconsistent in tone, or skipped entirely when a review isn't in the owner's own language.
+
+## Approach
+I designed and built Stellar Reviews end-to-end, now live as a FlyLabs product: an engine that drafts a response for every new review, detects language and sentiment, flags delicate reviews for a human instead of auto-sending them, and translates non-native-language reviews so owners always know what was actually said. A two-layer prompt (a shared core I maintain plus a per-client style layer) means every improvement compounds across every tenant at once, validated against real review data before any UI was built. The web app is Next.js 15 with Server Actions and Drizzle on serverless Postgres, deployed on Vercel; an autonomous Playwright suite runs against the live production app itself, resetting a shared demo tenant before and after so I can verify real user flows end-to-end with no staging environment to maintain.
+
+## Impact
+Went from one client's manual review-answering workflow to a reusable, multi-tenant product with a public demo sandbox any prospect can try live. The self-verifying test suite has already caught real concurrency bugs (parallel workers racing on shared state) invisible to unit tests. Ready to onboard hospitality clients beyond the one it was built for.
+
+Built with Claude Code.
