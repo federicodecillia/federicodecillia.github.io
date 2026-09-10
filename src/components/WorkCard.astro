@@ -1,8 +1,11 @@
 ---
-const { title, summary, stack, id } = Astro.props;
+const { title, summary, stack, id, demo } = Astro.props;
 ---
 <a href={`/work/${id}`} class="block border border-line rounded-lg p-5 hover:border-ink transition-colors">
-  <h3 class="font-medium text-lg">{title}</h3>
+  <div class="flex items-baseline justify-between gap-3">
+    <h3 class="font-medium text-lg">{title}</h3>
+    {demo && <span class="font-mono text-xs text-clay shrink-0">Live demo</span>}
+  </div>
   <p class="text-muted text-sm mt-1 leading-relaxed">{summary}</p>
   <div class="flex flex-wrap gap-2 mt-3">
     {stack.map((t) => <span class="font-mono text-xs text-muted border border-line rounded px-2 py-0.5">{t}</span>)}
