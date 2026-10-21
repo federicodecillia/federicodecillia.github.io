@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { Content } = await render(item);
 ---
-<Layout title={`${item.data.title} — Federico De Cillia`} description={item.data.summary}>
+<Layout title={`${item.data.title} | Federico De Cillia`} description={item.data.summary}>
   <article class="py-10">
     <a href="/#work" class="text-sm text-clay">← Back to work</a>
     <h1 class="font-serif text-4xl mt-4">{item.data.title}</h1>

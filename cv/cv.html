@@ -67,6 +67,11 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
 .skillrow span{color:var(--muted);}
 .certline{font-size:9.9px;line-height:1.5;color:var(--ink);margin-bottom:3.5px;}
 .certline span{color:var(--muted);}
+.page{min-height:0;padding:12mm 16mm 6mm;}
+.sec{margin:15px 0 8px;}
+.band{margin-top:15px;}
+.bullets li{font-size:9.9px;line-height:1.35;}
+.summary{line-height:1.5;}
 </style>
 </head>
 <body>
@@ -76,7 +81,7 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
     <img class="photo" src="headshot.jpg" alt="Federico De Cillia">
     <div class="hgroup">
       <div class="name">Federico De Cillia</div>
-      <div class="role">Lead Data Scientist &amp; AI Solutions Architect · Co-founder, FlyLabs.ai</div>
+      <div class="role">Data Science Manager &amp; AI Solutions Architect</div>
       <div class="tagline">I architect AI systems and build reliable AI agents that augment people.</div>
     </div>
     <div class="contact">
@@ -92,7 +97,7 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
   <div class="summary">
   With over 12 years of experience designing end-to-end Data &amp; AI solutions, I turn ambiguous business problems into production systems people actually use, working across discovery, solution architecture and hands-on delivery.
 
-  <br>I lead the Data Science team for DTC Assortment Intelligence at EssilorLuxottica, where I architect and implement AI systems end-to-end for Retail Assortment, Merchandising and Space Management across 18,000+ stores worldwide, mainly on Azure and Databricks. Alongside this I co-founded FlyLabs.ai, an AI studio: I ship production AI products, deliver AI solutions for other companies, and train teams to adopt AI with real judgment. I build daily with Claude Code, OpenAI Codex and Google Antigravity.
+  <br>I lead the Data Science team for DTC Category &amp; Merchandising at EssilorLuxottica, where I set engineering standards in the Databricks lakehouse and architect end-to-end AI systems used to craft the perfect assortment for 18,000+ stores worldwide.<br>In parallel I run AI trainings and selected consulting work, and contribute to open source, staying hands-on with how teams adopt AI.<br>I build daily with Claude Code, OpenAI Codex, Google Antigravity, GitHub Copilot.
  </div>
 
   <div class="portfolio"><b>Full portfolio &amp; live case studies</b><a href="https://federicodecillia.github.io">federicodecillia.github.io</a></div>
@@ -100,34 +105,35 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
   <div class="metrics">
     <div class="metric"><div class="n">12+ yrs</div><div class="l">AI &amp; data science</div></div>
     <div class="metric"><div class="n">100+</div><div class="l">AI projects shipped</div></div>
-    <div class="metric"><div class="n">50+</div><div class="l">businesses served</div></div>
+    <div class="metric"><div class="n">50+</div><div class="l">clients served</div></div>
   </div>
 
   <div class="sec">Experience</div>
 
   <div class="job">
-    <div class="job-head"><div class="job-title"><b>Lead Data Scientist</b> <span>· EssilorLuxottica, Global Retail &amp; DTC Assortment Intelligence</span></div><div class="job-dates">2021 – present</div></div>
+    <div class="job-head"><div class="job-title"><b>Data Science Manager - DTC Category &amp; Merchandising</b> <span>· EssilorLuxottica</span></div><div class="job-dates">2021 – present</div></div>
     <ul class="bullets">
-      <li>Lead a data science team; own the architecture and end-to-end delivery of AI initiatives across 18,000+ stores and 100+ markets, mainly on Azure and Databricks.</li>
+      <li>Lead the DTC AI Data Science team; own the architecture and end-to-end delivery of data and AI initiatives across 18,000+ stores and 100+ markets, mainly on Azure and Databricks.</li>
+      <li>Built the team&#39;s Databricks lakehouse (medallion architecture, Unity Catalog) and its engineering kit (AGENTS.md, branching and worktrees, PR-based CI/CD, Declarative Automation Bundles, automated tests).</li>
       <li>Built forecasting, anomaly-detection, clustering, optimization and recommendation engines on governed retail data foundations.</li>
-      <li>Shipped Genie and LLM systems giving merchandising, category and space teams natural-language access to enterprise data.</li>
-      <li>Impact: incremental revenue, cost optimization, license savings and multi-FTE efficiency gains.</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-head"><div class="job-title"><b>Co-founder &amp; AI Consultant</b> <span>· FlyLabs.ai, Freelance</span></div><div class="job-dates">2019 – present</div></div>
-    <ul class="bullets">
-      <li>Co-founded FlyLabs.ai, an AI studio shipping production AI products; delivered AI agents, LLM chatbots, automations and Agent Skills to 50+ businesses; Fiverr Vetted Pro (5/5 across 100+ projects).</li>
-      <li>Run tailored AI trainings (generative AI, LLMs, agents, automation) for audiences from beginners to technical teams; weekly public series on practical AI use (52 AI Tips, LinkedIn).</li>
-      <li>Advise clients on high-impact use cases and lead delivery end to end, from discovery and solution architecture to production rollout.</li>
+      <li>Delivered 8 web apps to serve 100+ business users.</li>
+      <li>Shipped Genie Agents and LLM systems giving the DTC Category &amp; Merchandising team natural-language access to enterprise data and advanced conversational analytics.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-head"><div class="job-title"><b>Co-founder &amp; Technology Lead</b> <span>· Porta Moneta APS, nonprofit volunteer role</span></div><div class="job-dates">2022 – present</div></div>
     <ul class="bullets">
-      <li>Built the digital operating layer: Website, WeGrocery app, Google Workspace, AI chatbot, Digital membership.</li>
+      <li>Built the digital operating layer: website, WeGrocery (open-source platform, versioned releases), AI chatbot, digital membership.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><div class="job-title"><b>AI Consultant &amp; Trainer</b> <span>· Freelance</span></div><div class="job-dates">2019 – present</div></div>
+    <ul class="bullets">
+      <li>Delivered AI agents, LLM chatbots, machine learning models and automation to 50+ clients across 100+ projects globally.</li>
+      <li>Run tailored AI trainings (generative AI, LLMs, agents, automation) for audiences from beginners to technical teams; weekly public series on practical AI use (52 AI Tips, LinkedIn).</li>
+      <li>Open source: easyprophet, a Python forecasting package on PyPI (versioned releases, tests, CI); WeGrocery, a buying-group ordering platform in production with versioned releases.</li>
     </ul>
   </div>
 
@@ -139,27 +145,28 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
   </div>
 
   <div class="job">
-    <div class="job-head"><div class="job-title"><b>Data Scientist</b> <span>· Bip — Business Integration Partners</span></div><div class="job-dates">2016 – 2017</div></div>
+    <div class="job-head"><div class="job-title"><b>Data Scientist</b> <span>· Bip, Business Integration Partners</span></div><div class="job-dates">2016 – 2017</div></div>
     <ul class="bullets">
       <li>Pioneer of Bip xTech CoE. Delivered ML & NLP models at Sky Italy to improve retention and upselling marketing strategies.</li>
     </ul>
   </div>
 
-  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Mining Junior Officer</b> <span>· Università Bocconi</span></div><div class="job-dates">2015</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Science Consultant</b> <span>· SAS / Value Lab</span></div><div class="job-dates">2015 – 2016</div></div></div>
+
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>Data Mining Junior Officer</b> <span>· Università Bocconi, Alumni Association</span></div><div class="job-dates">2015</div></div></div>
 
   <div class="sec">Education</div>
-  <div class="job compact"><div class="job-head"><div class="job-title"><b>MSc &amp; BSc in Statistical Sciences</b> <span>· University of Padua</span></div><div class="job-dates">2008 – 2014</div></div></div>
-  <div class="job compact"><div class="job-head"><div class="job-title"><b>LLP Erasmus, Economics</b> <span>· Universitat Pompeu Fabra, Barcelona</span></div><div class="job-dates">2012</div></div></div>
+  <div class="job compact"><div class="job-head"><div class="job-title"><b>MSc &amp; BSc in Statistical Sciences</b> <span>· University of Padua (Erasmus, Universitat Pompeu Fabra, 2012)</span></div><div class="job-dates">2008 – 2014</div></div></div>
   <div class="job compact"><div class="job-head"><div class="job-title"><b>IT Technical Diploma (Perito Industriale, Informatica)</b> <span>· ITI F. Severi, Padua</span></div><div class="job-dates">2004 – 2008</div></div></div>
 
   <div class="band">
     <div>
       <div class="sec">Skills</div>
-      <div class="skillrow"><b>AI engineering:</b> <span>LLMs, AI agents, AI solution architecture, RAG, MCP, tool use, evals, fine-tuning, prompt &amp; context engineering, Claude Code, Codex, Antigravity</span></div>
+      <div class="skillrow"><b>AI engineering:</b> <span>LLMs, AI agents, AI solution architecture, RAG, MCP, tool use, evals, fine-tuning, prompt engineering, context engineering, loop engineering</span></div>
       <div class="skillrow"><b>ML &amp; data science:</b> <span>Python, R, Supervised &amp; Unsupervised Learning, Time Series Forecast, NLP, MLOps, embeddings &amp; vector DBs</span></div>
-      <div class="skillrow"><b>Data &amp; cloud:</b> <span>SQL, Spark, Databricks, Unity Catalog, Databricks Genie, Power BI, Azure, AWS, GCP, Postgres, Docker, Git &amp; CI/CD</span></div>
+      <div class="skillrow"><b>Data &amp; cloud:</b> <span>SQL, Spark, Databricks, Delta Lake, Unity Catalog, Declarative Automation Bundles, Databricks Genie, Power BI, Azure, AWS, GCP, Postgres, Docker, Git &amp; CI/CD</span></div>
       <div class="skillrow"><b>Apps &amp; web:</b> <span>FastAPI, Streamlit, TypeScript, Next.js, React, Vercel</span></div>
-      <div class="skillrow"><b>Delivery:</b> <span>solution architecture, discovery &amp; scoping, pre-sales &amp; technical advisory.</span></div>
+      <div class="skillrow"><b>Delivery:</b> <span>solution architecture, discovery &amp; scoping, technical advisory</span></div>
       <div class="skillrow"><b>Languages:</b> <span>Italian (native), English (C1), Spanish (B2)</span></div>
     </div>
     <div>
@@ -167,11 +174,11 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;}
       <div class="certline">Nova 111 Top Talent Italy (2023)</div>
       <div class="certline">Databricks Machine Learning Professional</div>
       <div class="certline">Azure Data Scientist Associate (DP-100)</div>
-      <div class="certline">Tackling the Challenges of Big Data <span>— MIT</span></div>
-      <div class="certline">Deep Learning Specialization <span>— deeplearning.ai</span></div>
-      <div class="certline">ML for Data Science &amp; Analytics <span>— Columbia University</span></div>
-      <div class="certline">Machine Learning Specialization <span>— University of Washington</span></div>
-      <div class="certline">Python for Data Science <span>— University of California</span></div>
+      <div class="certline">Tackling the Challenges of Big Data <span>· MIT</span></div>
+      <div class="certline">Deep Learning Specialization <span>· deeplearning.ai</span></div>
+      <div class="certline">ML for Data Science &amp; Analytics <span>· Columbia University</span></div>
+      <div class="certline">Machine Learning Specialization <span>· University of Washington</span></div>
+      <div class="certline">Python for Data Science <span>· University of California</span></div>
     </div>
   </div>
 
